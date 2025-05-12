@@ -66,33 +66,13 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &layerSwTap 0 Q    &layerSwTap 1 W  &layerSwTap 2 E  &layerSwTap 3 R    &layerSwTap 0 T  &kp TAB   &kp DELETE     &kp Y    &kp U               &kp I         &kp O            &kp P                         &kp DE_U_UMLAUT
+&kp ESCAPE        &layerSwTap 0 Q    &layerSwTap 4 W  &layerSwTap 1 E  &layerSwTap 2 R    &layerSwTap 3 T  &kp TAB   &kp DELETE     &kp Y    &kp U               &kp I         &kp O            &kp P                         &kp DE_U_UMLAUT
 &kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &kp LALT  &kp BACKSPACE  &kp H    &HRR RIGHT_SHIFT J  &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &HRR RIGHT_SHIFT DE_A_UMLAUT
 &kp LEFT_CONTROL  &kp Z              &kp X            &kp C            &kp V              &kp B                                     &kp N    &kp M               &kp COMMA     &kp DOT          &kp FSLH                      &HRR TAB RIGHT_CONTROL
-                                                      &mo 2            &mo 3              &kp SPACE                                 &kp RET  &mo 3               &mo 4
+                                                      &mo 2            &mo 1              &kp SPACE                                 &kp RET  &mo 1               &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
-        };
-
-        extra_layer_3 {
-            display-name = "EXTRA 3";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EURO   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none        &kp DE_SHARP_S
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DE_PLUS  &kp DE_MINUS
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DE_STAR  &kp DE_SLASH
-                        &trans  &trans  &trans                  &trans        &trans        &trans
-            >;
-        };
-
-        extra_layer_5 {
-            display-name = "EXTRA 5";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_QUESTION     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_DOLLAR         &kp DE_SLASH         &kp DE_BACKSLASH
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_HASH
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp DE_EQUAL        &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_MINUS          &kp DE_TILDE         &kp DE_AMPERSAND
-                        &trans  &trans  &trans                  &trans              &trans                   &trans
-            >;
         };
 
         lower_layer {
@@ -109,6 +89,26 @@
 &trans   &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &trans      &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT  &kp DE_EURO  &kp DEL
 &trans   &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                         &kp DE_MICRO  &kp PAGE_DOWN  &kp PG_UP  &trans     &bootloader  &kp DE_PIPE
                                         &kp LGUI      &trans        &kp SPACE                              &kp LGUI      &trans         &kp SPACE
+            >;
+        };
+
+        extra_layer_5 {
+            display-name = "EXTRA 5";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_QUESTION     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_DOLLAR         &kp DE_SLASH         &kp DE_BACKSLASH
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_HASH
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp DE_EQUAL        &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_MINUS          &kp DE_TILDE         &kp DE_AMPERSAND
+                        &trans  &trans  &trans                  &trans              &trans                   &trans
+            >;
+        };
+
+        extra_layer_3 {
+            display-name = "EXTRA 3";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_EURO   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none        &kp DE_SHARP_S
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp DE_PLUS  &kp DE_MINUS
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DE_STAR  &kp DE_SLASH
+                        &trans  &trans  &trans                  &trans        &trans        &trans
             >;
         };
 
