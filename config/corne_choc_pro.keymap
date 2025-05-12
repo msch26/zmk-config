@@ -121,10 +121,10 @@
         extra_layer_2 {
             display-name = "EXTRA 2";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans         &trans  &kp N8  &kp NUMBER_8  &kp KP_NUMBER_8  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp RIGHT_ALT  &trans  &kp N9  &kp NUMBER_9  &kp KP_NUMBER_9  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans                               &trans  &trans  &trans        &trans           &kp LESS_THAN  &kp GREATER_THAN
-                        &trans  &trans  &trans                               &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans         &trans  &kp N8      &kp NUMBER_8  &kp KP_NUMBER_8  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_ALT  &kp RIGHT_ALT  &trans  &kp N9      &kp NUMBER_9  &kp KP_NUMBER_9  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans                               &trans  &kp RA(N8)  &kp RA(N9)    &trans           &kp LESS_THAN  &kp GREATER_THAN
+                        &trans  &trans  &trans                               &trans  &trans      &trans
             >;
         };
 
