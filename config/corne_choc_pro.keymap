@@ -108,12 +108,12 @@
             >;
         };
 
-        extra_layer_1 {
+        programming {
             display-name = "programming";
             bindings = <
-&none  &none  &none  &none   &none   &none   &none  &none  &kp LS(SLASH)  &kp N8  &kp N9  &kp STAR        &none  &trans
-&none  &none  &none  &none   &none   &none   &none  &none  &kp N1         &sk N8  &kp N9  &kp SLASH       &none  &none
-&none  &none  &none  &none   &none   &none                 &kp N0         &kp N7  &kp N0  &kp LEFT_BRACE  &none  &none
+&none  &none  &none  &none   &none   &none   &none  &none  &kp LS(SLASH)  &kp N8  &kp N9  &kp STAR        &kp BACKSLASH  &trans
+&none  &none  &none  &none   &none   &none   &none  &none  &kp N1         &sk N8  &kp N9  &kp SLASH       &kp CARET      &none
+&none  &none  &none  &none   &none   &none                 &kp N0         &kp N7  &kp N0  &kp LEFT_BRACE  &kp LS(COMMA)  &kp LS(DOT)
                      &trans  &trans  &trans                &trans         &trans  &none
             >;
         };
