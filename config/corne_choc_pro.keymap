@@ -141,10 +141,10 @@
         extra_layer_4 {
             display-name = "EXTRA 4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp QUESTION  &kp N8  &kp N9  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp NUMBER_1  &kp N8  &kp N9  &trans  &kp D   &kp E
-&trans  &trans  &trans  &trans  &trans  &trans                  &kp N0        &kp N7  &kp N0  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp QUESTION      &kp N8  &kp N9  &kp KP_SLASH  &trans            &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LS(NUMBER_1)  &kp N8  &kp N9  &trans        &kp LS(NUMBER_2)  &kp E
+&trans  &trans  &trans  &trans  &trans  &trans                  &kp N0            &kp N7  &kp N0  &kp KP_SLASH  &kp RA(MINUS)     &trans
+                        &trans  &trans  &trans                  &trans            &trans  &trans
             >;
         };
 
