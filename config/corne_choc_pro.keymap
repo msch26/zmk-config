@@ -67,7 +67,7 @@
 
             bindings = <
 &kp ESCAPE        &layerSwTap 1 Q    &layerSwTap 2 W  &layerSwTap 3 E  &layerSwTap 4 R    &layerSwTap 5 T  &kp TAB   &kp BACKSPACE  &kp Y    &kp U               &kp I         &kp O            &kp P                  &kp LEFT_BRACKET
-&kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &kp LALT  &kp BACKSPACE  &kp H    &HRR RIGHT_SHIFT J  &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT SEMI  &HRR RIGHT_SHIFT SINGLE_QUOTE
+&kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &kp LALT  &kp DELETE     &kp H    &HRR RIGHT_SHIFT J  &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT SEMI  &HRR RIGHT_SHIFT SINGLE_QUOTE
 &kp LEFT_CONTROL  &kp Z              &kp X            &kp C            &kp V              &kp B                                     &kp N    &kp M               &kp COMMA     &kp DOT          &kp FSLH               &HRR ESC RIGHT_CONTROL
                                                       &mo 3            &mo 1              &kp SPACE                                 &kp RET  &mo 2               &mo 4
             >;
