@@ -109,10 +109,10 @@
         };
 
         programming {
-            display-name = "programming";
+            display-name = "prog";
             bindings = <
-&none  &none  &none  &none   &none   &none   &none  &none     &kp LS(SLASH)  &kp RA(N8)  &trans  &kp RBRC         &kp BACKSLASH  &trans
-&none  &none  &none  &none   &none   &none   &none  &kp RALT  &kp N1         &sk N8      &kp N9  &kp KP_SLASH     &kp CARET      &none
+&none  &none  &none  &none   &none   &none   &none  &none     &kp LS(SLASH)  &kp RA(N8)  &kp A   &kp RBRC         &kp BACKSLASH  &trans
+&none  &none  &none  &none   &kp A   &none   &none  &kp RALT  &kp N1         &sk N8      &kp N9  &kp KP_SLASH     &kp CARET      &none
 &none  &none  &none  &none   &none   &none                    &kp N0         &kp N7      &kp N0  &kp RIGHT_BRACE  &kp LS(COMMA)  &kp LS(DOT)
                      &trans  &trans  &trans                   &trans         &trans      &none
             >;
@@ -165,6 +165,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
+        };
+
+        layer_9 {
+            display-name = "prog";
+            bindings = <
+&none  &none  &none  &none   &none   &none   &none  &none     &kp LS(SLASH)  &kp RA(N8)  &trans  &kp RBRC         &kp BACKSLASH  &trans
+&none  &none  &none  &none   &none   &none   &none  &kp RALT  &kp N1         &sk N8      &kp N9  &kp KP_SLASH     &kp CARET      &none
+&none  &none  &none  &none   &none   &none                    &kp N0         &kp N7      &kp N0  &kp RIGHT_BRACE  &kp LS(COMMA)  &kp LS(DOT)
+                     &trans  &trans  &trans                   &trans         &trans      &none
             >;
         };
     };
