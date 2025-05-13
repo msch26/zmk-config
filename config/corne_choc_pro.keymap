@@ -67,7 +67,7 @@
 
             bindings = <
 &kp ESCAPE        &layerSwTap 0 Q    &layerSwTap 0 W  &layerSwTap 1 E  &layerSwTap 2 R    &layerSwTap 0 T  &kp TAB   &kp DELETE     &kp Y    &kp U               &kp I         &kp O            &kp P                         &kp DE_U_UMLAUT
-&kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &kp LALT  &kp BACKSPACE  &kp H    &HRR RIGHT_SHIFT J  &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &HRR RIGHT_SHIFT DE_A_UMLAUT
+&kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &kp LALT  &kp BACKSPACE  &kp H    &HRR RIGHT_SHIFT J  &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &mt RIGHT_SHIFT DE_A_UMLAUT
 &kp LEFT_CONTROL  &kp Z              &kp X            &kp C            &kp V              &kp B                                     &kp N    &kp M               &kp COMMA     &kp DOT          &kp FSLH                      &HRR RIGHT_CONTROL TAB
                                                       &mo 2            &mo 1              &kp SPACE                                 &kp RET  &mo 1               &mo 2
             >;
@@ -92,14 +92,16 @@
             >;
         };
 
-        extra_layer_5 {
+        programming {
             display-name = "EXTRA 5";
             bindings = <
-&trans  &kp AT            &trans               &trans  &trans  &trans  &trans  &trans  &kp DE_QUESTION     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_DOLLAR         &kp DE_SLASH         &kp DE_BACKSLASH
-&trans  &trans            &trans               &trans  &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_HASH
-&trans  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans  &trans  &trans                  &kp DE_EQUAL        &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_MINUS          &kp DE_TILDE         &kp DE_AMPERSAND
-                                               &trans  &trans  &trans                  &trans              &trans                   &trans
+&trans  &kp AT            &trans               &mt A B  &trans  &trans  &trans  &trans  &kp DE_QUESTION     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_DOLLAR         &kp DE_SLASH         &kp DE_BACKSLASH
+&trans  &trans            &trans               &trans   &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_HASH
+&trans  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans   &trans  &trans                  &kp DE_EQUAL        &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_MINUS          &kp DE_TILDE         &kp DE_AMPERSAND
+                                               &trans   &trans  &trans                  &trans              &trans                   &trans
             >;
+
+            label = "prog";
         };
     };
 };
