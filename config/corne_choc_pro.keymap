@@ -68,10 +68,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &layerSwTap 0 Q  &layerSwTap 1 W  &layerSwTap 2 E  &layerSwTap 3 R    &layerSwTap 0 T  &trans          &kp DELETE     &layerSwTap 0 Y  &layerSwTap 3 U     &layerSwTap 2 I  &layerSwTap 1 O  &layerSwTap 0 P               &kp DE_U_UMLAUT
+&kp ESCAPE        &layerSwTap 0 Q  &layerSwTap 1 W  &layerSwTap 2 E  &layerSwTap 3 R    &layerSwTap 0 T  &mo 3           &kp DELETE     &layerSwTap 0 Y  &layerSwTap 3 U     &layerSwTap 2 I  &layerSwTap 1 O  &layerSwTap 0 P               &kp DE_U_UMLAUT
 &kp TAB           &HRL LEFT_ALT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &kp DE_SHARP_S  &kp BACKSPACE  &kp H            &HRR RIGHT_SHIFT J  &HRR RCTRL K     &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &mt RIGHT_SHIFT DE_A_UMLAUT
 &kp LEFT_CONTROL  &kp Z            &kp X            &kp C            &kp V              &kp B                                           &kp N            &kp M               &kp COMMA        &kp DOT          &kp DE_MINUS                  &HRR RIGHT_CONTROL TAB
-                                                    &mo 2            &mo 1              &lt 3 SPACE                                     &lt 3 RETURN     &mo 1               &mo 2
+                                                    &mo 2            &mo 1              &lt 4 SPACE                                     &lt 4 RETURN     &mo 1               &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -117,10 +117,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6  &kp F7  &kp F8     &kp F9     &kp F10    &kp F11    &kp F12    &trans
+&trans  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5  &trans  &trans  &kp DE_N6  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_N0  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                     &trans     &trans     &trans     &trans     &trans     &trans
+                              &trans     &trans     &trans                     &trans     &trans     &trans
             >;
         };
     };
