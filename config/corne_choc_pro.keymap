@@ -107,10 +107,10 @@
 
         layer_3 {
             bindings = <
-&none  &none  &kp K_PREVIOUS  &kp LS(C_PLAY)  &kp K_STOP  &kp K_NEXT  &none  &kp PSCRN      &kp K_CALCULATOR  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SLASH     &kp DE_MINUS
-&none  &none  &none           &none           &none       &none       &none  &kp BACKSPACE  &none             &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_ASTERISK  &kp DE_PLUS
-&none  &none  &none           &none           &none       &none                             &kp DE_N0         &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_COMMA     &kp ENTER
-                              &none           &none       &none                             &kp RET           &none      &none
+&kp ESCAPE  &none  &kp K_PREVIOUS  &kp LS(C_PLAY)  &kp K_STOP  &kp K_NEXT  &none  &kp ESCAPE     &kp DE_PLUS   &kp DE_N7        &kp DE_N8   &kp DE_N9  &kp DE_SLASH     &none
+&none       &none  &none           &none           &none       &none       &none  &kp BACKSPACE  &kp DE_MINUS  &kp DE_N4        &kp DE_N5   &kp DE_N6  &kp DE_ASTERISK  &none
+&none       &none  &none           &none           &none       &none                             &kp DE_N0     &kp DE_N1        &kp DE_N2   &kp DE_N3  &kp DE_COMMA     &none
+                                   &none           &none       &none                             &kp RET       &kp PRINTSCREEN  &kp K_CALC
             >;
         };
 
