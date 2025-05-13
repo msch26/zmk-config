@@ -6,7 +6,6 @@
 
 #include "keys_de.h"
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -108,10 +107,10 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bl BL_TOG  &bl BL_CYCLE
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &bl BL_INC
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans      &bl BL_DEC
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&none  &none  &none  &none  &none  &none  &none  &kp PSCRN  &kp K_CALCULATOR  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SLASH     &kp DE_MINUS
+&none  &none  &none  &none  &none  &none  &none  &none      &kp C_SNAPSHOT    &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_ASTERISK  &kp DE_PLUS
+&none  &none  &none  &none  &none  &none                    &kp DE_N0         &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_COMMA     &kp ENTER
+                     &none  &none  &none                    &none             &none      &none
             >;
         };
 
