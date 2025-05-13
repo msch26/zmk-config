@@ -96,10 +96,10 @@
         programming {
             display-name = "PROG";
             bindings = <
-&trans  &kp AT          &kp DE_CARET    &kt DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_HASH   &kp DE_EURO  &msc SCRL_UP    &kp DE_QUESTION     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_DOLLAR         &kp DE_SLASH         &kp DE_BACKSLASH
-&trans  &kp DE_SECTION  &kp DE_PERCENT  &kp DE_TILDE      &kp DE_PIPE          &kp DE_COLON  &trans       &msc SCRL_DOWN  &kp DE_EXCLAMATION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_ACUTE
-&trans  &trans          &trans          &kp DE_GRAVE      &kp DE_ACUTE         &trans                                     &kp DE_EQUAL        &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_ASTERISK       &kp TILDE            &kp DE_AMPERSAND
-                                        &trans            &trans               &trans                                     &trans              &trans                   &trans
+&trans       &kp AT          &kp DE_CARET    &kt DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_HASH   &kp LC(DE_C)  &msc SCRL_UP    &kp DE_QUESTION     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_DOLLAR         &kp DE_SLASH         &kp DE_BACKSLASH
+&kp LC(TAB)  &kp DE_SECTION  &kp DE_PERCENT  &kp DE_COLON      &kp DE_SEMI          &none         &kp LC(DE_V)  &msc SCRL_DOWN  &kp DE_EXCLAMATION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_ACUTE
+&trans       &kp DE_GRAVE    &kp DE_ACUTE    &kp TILDE         &kp PIPE             &kp DE_MINUS                                &kp DE_EQUAL        &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_ASTERISK       &kp TILDE            &kp DE_AMPERSAND
+                                             &trans            &trans               &trans                                      &trans              &trans                   &trans
             >;
 
             label = "prog";
@@ -107,10 +107,10 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none  &none  &kp PSCRN  &kp K_CALCULATOR  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SLASH     &kp DE_MINUS
-&none  &none  &none  &none  &none  &none  &none  &none      &kp C_SNAPSHOT    &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_ASTERISK  &kp DE_PLUS
-&none  &none  &none  &none  &none  &none                    &kp DE_N0         &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_COMMA     &kp ENTER
-                     &none  &none  &none                    &none             &none      &none
+&none  &none  &kp K_PREVIOUS  &kp LS(C_PLAY)  &kp K_STOP  &kp K_NEXT  &none  &kp PSCRN  &kp K_CALCULATOR  &kp DE_N7  &kp DE_N8  &kp DE_N9  &kp DE_SLASH     &kp DE_MINUS
+&none  &none  &none           &none           &none       &none       &none  &none      &kp C_SNAPSHOT    &kp DE_N4  &kp DE_N5  &kp DE_N6  &kp DE_ASTERISK  &kp DE_PLUS
+&none  &none  &none           &none           &none       &none                         &kp DE_N0         &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_COMMA     &kp ENTER
+                              &none           &none       &none                         &none             &none      &none
             >;
         };
 
