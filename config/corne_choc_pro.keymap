@@ -6,8 +6,10 @@
 
 #include "keys_de.h"
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -66,10 +68,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &layerSwTap 0 Q    &layerSwTap 1 W  &layerSwTap 2 E  &layerSwTap 3 R    &layerSwTap 0 T  &kp TAB         &kp DELETE     &kp Y    &kp U               &kp I         &kp O            &kp P                         &kp DE_U_UMLAUT
-&kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &kp DE_SHARP_S  &kp BACKSPACE  &kp H    &HRR RIGHT_SHIFT J  &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &mt RIGHT_SHIFT DE_A_UMLAUT
-&kp LEFT_CONTROL  &kp Z              &kp X            &kp C            &kp V              &kp B                                           &kp N    &kp M               &kp COMMA     &kp DOT          &kp FSLH                      &HRR RIGHT_CONTROL TAB
-                                                      &mo 2            &mo 1              &kp SPACE                                       &kp RET  &mo 1               &mo 2
+&kp ESCAPE        &layerSwTap 0 Q    &layerSwTap 1 W  &layerSwTap 2 E  &layerSwTap 3 R    &layerSwTap 0 T  &kp TAB         &kp DELETE     &layerSwTap 0 Y  &layerSwTap 3 U     &layerSwTap 2 I  &layerSwTap 1 O  &layerSwTap 0 P               &kp DE_U_UMLAUT
+&kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &kp DE_SHARP_S  &kp BACKSPACE  &kp H            &HRR RIGHT_SHIFT J  &HRR RCTRL K     &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &mt RIGHT_SHIFT DE_A_UMLAUT
+&kp LEFT_CONTROL  &kp Z              &kp X            &kp C            &kp V              &kp B                                           &kp N            &kp M               &kp COMMA        &kp DOT          &kp DE_MINUS                  &HRR RIGHT_CONTROL TAB
+                                                      &mo 2            &mo 1              &lt 3 SPACE                                     &lt 3 RETURN     &mo 1               &mo 2
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -95,10 +97,10 @@
         programming {
             display-name = "PROG";
             bindings = <
-&trans  &kp AT            &trans               &mt A B  &trans  &trans  &trans  &trans  &kp DE_QUESTION     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_DOLLAR         &kp DE_SLASH         &kp DE_BACKSLASH
-&trans  &trans            &trans               &trans   &trans  &trans  &trans  &trans  &kp DE_EXCLAMATION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_HASH
-&trans  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &trans   &trans  &trans                  &kp DE_EQUAL        &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_MINUS          &kp DE_TILDE         &kp DE_AMPERSAND
-                                               &trans   &trans  &trans                  &trans              &trans                   &trans
+&trans  &kp AT            &kp DE_PERCENT       &kt DE_EURO   &trans        &trans       &trans  &msc SCRL_UP    &kp DE_QUESTION     &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_DOLLAR         &kp DE_SLASH         &kp DE_BACKSLASH
+&trans  &kp DE_SECTION    &kp DE_SHARP_S       &kp DE_HASH   &kp DE_TILDE  &kp DE_PIPE  &trans  &msc SCRL_DOWN  &kp DE_EXCLAMATION  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_DOUBLE_QUOTES  &kp DE_SINGLE_QUOTE  &kp DE_ACUTE
+&trans  &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_GRAVE  &kp DE_ACUTE  &trans                               &kp DE_EQUAL        &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_ASTERISK       &kp TILDE            &kp DE_AMPERSAND
+                                               &trans        &trans        &trans                               &trans              &trans                   &trans
             >;
 
             label = "prog";
@@ -106,9 +108,9 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp DE_SHARP_S  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bl BL_TOG  &bl BL_CYCLE
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &bl BL_INC
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans      &bl BL_DEC
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
