@@ -66,10 +66,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &layerSwTap 0 Q    &layerSwTap 1 W  &layerSwTap 2 E  &layerSwTap 3 R    &layerSwTap 0 T  &kp TAB  &kp DELETE     &layerSwTap 0 DE_Z  &layerSwTap 3 U     &layerSwTap 2 I  &layerSwTap 1 O  &layerSwTap 0 P               &kp DE_U_UMLAUT
-&kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &HRL LEFT_SHIFT F  &kp G            &mo 3    &kp BACKSPACE  &kp H               &HRR RIGHT_SHIFT J  &HRR RCTRL K     &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &mt RIGHT_SHIFT DE_A_UMLAUT
-&kp LEFT_CONTROL  &kp DE_Y           &kp X            &kp C            &kp V              &kp B                                    &kp N               &kp M               &kp DE_COMMA     &kp DE_DOT       &kp DE_MINUS                  &kp RIGHT_CONTROL
-                                                      &mo 1            &mo 2              &lt 4 SPACE                              &lt 4 RETURN        &mo 2               &mo 1
+&kp ESCAPE        &layerSwTap 0 Q    &layerSwTap 1 W  &layerSwTap 2 E  &layerSwTap 3 R  &layerSwTap 4 T  &kp TAB  &kp DELETE     &layerSwTap 4 DE_Z  &layerSwTap 3 U     &layerSwTap 2 I  &layerSwTap 1 O  &layerSwTap 0 P               &kp DE_U_UMLAUT
+&kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &lt 1 F          &kp G            &mo 3    &kp BACKSPACE  &kp H               &HRR RIGHT_SHIFT J  &HRR RCTRL K     &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &mt RIGHT_SHIFT DE_A_UMLAUT
+&kp LEFT_CONTROL  &kp DE_Y           &kp X            &kp C            &kp V            &kp B                                    &kp N               &kp M               &kp DE_COMMA     &kp DE_DOT       &kp DE_MINUS                  &kp RIGHT_CONTROL
+                                                      &mo 1            &mo 2            &lt 4 SPACE                              &lt 4 RETURN        &mo 2               &mo 1
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
