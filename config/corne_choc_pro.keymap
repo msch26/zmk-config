@@ -87,7 +87,7 @@
             bindings = <
 &kp TAB         &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL  &kp DELETE  &kp N6        &kp N7         &kp N8     &kp N9     &kp N0       &kp BSPC
 &kp LEFT_SHIFT  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &trans      &kp LEFT      &kp DOWN       &kp UP     &kp RIGHT  &kp DE_EURO  &kp DEL
-&kp LCTRL       &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                         &kp DE_MICRO  &kp PAGE_DOWN  &kp PG_UP  &trans     &bootloader  &kp DE_PIPE
+&kp LCTRL       &trans        &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                         &kp DE_MICRO  &kp PAGE_DOWN  &kp PG_UP  &trans     &bootloader  &kp DE_PIPE
                                                &kp LGUI      &trans        &kp SPACE                              &kp LGUI      &trans         &kp SPACE
             >;
         };
@@ -108,7 +108,7 @@
             bindings = <
 &kp ESCAPE  &none  &kp K_PREVIOUS  &kp LS(C_PLAY)  &kp K_STOP  &kp K_NEXT  &none        &kp ESCAPE  &kp DE_N7  &kp DE_N8         &kp DE_N9        &none  &kp DE_PLUS      &kp DE_MINUS
 &none       &none  &none           &none           &none       &none       &kp DE_EURO  &kp DE_N0   &kp DE_N4  &kp DE_N5         &kp DE_N6        &none  &kp DE_ASTERISK  &kp DE_SLASH
-&none       &none  &none           &none           &none       &none                                &kp DE_N1  &kp DE_N2         &kp DE_N3        &none  &kp DE_COMMA     &kp BACKSPACE
+&none       &none  &bt BT_CLR      &none           &none       &none                                &kp DE_N1  &kp DE_N2         &kp DE_N3        &none  &kp DE_COMMA     &kp BACKSPACE
                                    &none           &none       &kp SPACE                            &kp RET    &kp K_CALCULATOR  &kp PRINTSCREEN
             >;
         };
