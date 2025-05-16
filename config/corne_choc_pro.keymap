@@ -87,8 +87,8 @@
             bindings = <
 &kp ESCAPE                &layerSwTap 4 Q    &layerSwTap 3 W  &layerSwTap 2 E  &layerSwTap 1 R  &layerSwTap 0 T  &kp TAB  &kp BACKSPACE  &layerSwTap 0 DE_Z  &layerSwTap 1 U     &layerSwTap 2 I  &layerSwTap 3 O  &layerSwTap 4 P               &kp DE_U_UMLAUT
 &mt LEFT_SHIFT BACKSPACE  &HRL LEFT_SHIFT A  &HRL LEFT_ALT S  &HRL LCTRL D     &lt 1 F          &kp G            &mo 3    &kp DELETE     &kp H               &HRR RIGHT_SHIFT J  &HRR RCTRL K     &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &mt RIGHT_SHIFT DE_A_UMLAUT
-&kp LEFT_CONTROL          &mt LEFT_ALT DE_Y  &kp X            &kp C            &kp V            &kp B                                    &kp N               &kp M               &kp DE_COMMA     &kp DE_DOT       &mt RIGHT_ALT DE_MINUS        &kp RIGHT_CONTROL
-                                                              &mo 4            &lt 2 TAB        &lt 1 SPACE                              &lt 1 RETURN        &lt 2 TAB           &mo 4
+&kp LEFT_CONTROL          &mt LEFT_ALT DE_Y  &kp X            &kp C            &kp V            &kp B                                    &kp N               &kp M               &kp DE_COMMA     &kp DE_DOT       &mt RIGHT_ALT DE_MINUS        &mt RCTRL ENTER
+                                                              &mo 4            &lt 2 TAB        &lt 1 SPACE                              &lt 1 SPACE         &lt 2 TAB           &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
