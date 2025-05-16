@@ -53,6 +53,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        layer5 {
+            bindings = <&mo 5>;
+            key-positions = <40 41>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -124,10 +133,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &rgb_ug RGB_TOG  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
