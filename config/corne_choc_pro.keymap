@@ -95,10 +95,10 @@
         programming {
             display-name = "PROG";
             bindings = <
-&trans     &kp DE_AT       &kp DE_CARET    &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_HASH   &kp LC(DE_C)  &kp DE_PLUS  &kp DE_QUESTION       &kp DE_LEFT_BRACKET      &kp DE_RIGHT_BRACKET      &kp DE_EXCL          &kp DE_DOLLAR     &kp DE_BACKSLASH
-&kp TAB    &kp DE_SECTION  &kp DE_PERCENT  &kp DE_COLON      &kp DE_SEMI          &kp DE_MINUS  &kp LC(DE_V)  &none        &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS  &kp DE_SINGLE_QUOTE  &kp DE_ASTERISK   &kp DE_SLASH
-&kp LCTRL  &kp DE_GRAVE    &kp DE_ACUTE    &kp DE_TILDE      &kp DE_PIPE          &kp DE_EURO                              &kp DE_EQUAL          &kp DE_LEFT_BRACE        &kp DE_RIGHT_BRACE        &kp DE_SEMICOLON     &kp DE_AMPERSAND  &kp DE_TILDE
-                                           &trans            &trans               &trans                                   &trans                &trans                   &trans
+&trans     &kp DE_AT       &kp DE_CARET    &kp DE_LESS_THAN  &kp DE_GREATER_THAN  &kp DE_HASH   &kp LC(DE_C)  &kp DE_PLUS  &kp DE_QUESTION       &mt DE_LESS_THAN DE_LEFT_BRACE  &mt DE_GREATER_THAN DE_RIGHT_BRACE  &kp DE_EXCL          &kp DE_DOLLAR     &kp DE_BACKSLASH
+&kp TAB    &kp DE_SECTION  &kp DE_PERCENT  &kp DE_COLON      &kp DE_SEMI          &kp DE_MINUS  &kp LC(DE_V)  &none        &kp DE_DOUBLE_QUOTES  &kp DE_LEFT_PARENTHESIS         &kp DE_RIGHT_PARENTHESIS            &kp DE_SINGLE_QUOTE  &kp DE_ASTERISK   &kp DE_SLASH
+&kp LCTRL  &kp DE_GRAVE    &kp DE_ACUTE    &kp DE_TILDE      &kp DE_PIPE          &kp DE_EURO                              &kp DE_EQUAL          &kp DE_LEFT_BRACE               &kp DE_RIGHT_BRACE                  &kp DE_SEMICOLON     &kp DE_AMPERSAND  &kp DE_TILDE
+                                           &trans            &trans               &trans                                   &trans                &trans                          &trans
             >;
 
             label = "prog";
@@ -106,10 +106,10 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE                       &none                              &kp K_PREVIOUS  &kp LS(C_PLAY)  &kp K_STOP  &kp K_NEXT  &none        &kp ESCAPE          &kp DE_N7  &kp DE_N8         &kp DE_N9        &none  &kp DE_PLUS      &kp DE_MINUS
-&rgb_ug RGB_COLOR_HSB(0,100,46)  &rgb_ug RGB_COLOR_HSB(124,100,50)  &none           &none           &none       &none       &kp DE_EURO  &mt DE_EQUAL DE_N0  &kp DE_N4  &kp DE_N5         &kp DE_N6        &none  &kp DE_ASTERISK  &kp DE_SLASH
-&rgb_ug RGB_EFF                  &none                              &bt BT_CLR      &none           &none       &none                                        &kp DE_N1  &kp DE_N2         &kp DE_N3        &none  &kp DE_COMMA     &kp BACKSPACE
-                                                                                    &none           &none       &kp SPACE                                    &kp RET    &kp K_CALCULATOR  &kp PRINTSCREEN
+&kp ESCAPE                       &none                              &kp K_PREVIOUS  &kp LS(C_PLAY)  &kp K_STOP  &kp K_NEXT  &none        &kp ESCAPE          &mt DE_SLASH DE_N7   &mt DE_LEFT_PARENTHESIS DE_N8  &mt DE_RIGHT_PARENTHESIS DE_N9  &none  &kp DE_PLUS      &kp DE_MINUS
+&rgb_ug RGB_COLOR_HSB(0,100,46)  &rgb_ug RGB_COLOR_HSB(124,100,50)  &none           &none           &none       &none       &kp DE_EURO  &mt DE_EQUAL DE_N0  &mt DE_DOLLAR DE_N4  &mt DE_PERCENT DE_N5           &mt DE_AMPERSAND DE_N6          &none  &kp DE_ASTERISK  &kp DE_SLASH
+&rgb_ug RGB_EFF                  &none                              &bt BT_CLR      &none           &none       &none                                        &mt DE_EXCL DE_N1    &mt DOUBLE_QUOTES DE_N2        &mt DE_SECTION DE_N3            &none  &kp DE_COMMA     &kp BACKSPACE
+                                                                                    &none           &none       &kp SPACE                                    &kp RET              &kp K_CALCULATOR               &kp PRINTSCREEN
             >;
         };
 
