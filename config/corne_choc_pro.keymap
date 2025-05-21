@@ -120,7 +120,7 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE                       &none                              &kp K_PREVIOUS   &kp LS(C_PLAY)   &kp K_STOP       &kp K_NEXT       &none        &kp ESCAPE          &mt DE_SLASH DE_N7   &mt DE_LEFT_PARENTHESIS DE_N8  &mt DE_RIGHT_PARENTHESIS DE_N9  &none  &kp DE_PLUS      &kp DE_MINUS
+&kp ESCAPE                       &rgb_ug RGB_COLOR_HSB(291,92,44)   &kp K_PREVIOUS   &kp LS(C_PLAY)   &kp K_STOP       &kp K_NEXT       &none        &kp ESCAPE          &mt DE_SLASH DE_N7   &mt DE_LEFT_PARENTHESIS DE_N8  &mt DE_RIGHT_PARENTHESIS DE_N9  &none  &kp DE_PLUS      &kp DE_MINUS
 &rgb_ug RGB_COLOR_HSB(0,100,46)  &rgb_ug RGB_COLOR_HSB(124,100,50)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none            &kp DE_EURO  &mt DE_EQUAL DE_N0  &mt DE_DOLLAR DE_N4  &mt DE_PERCENT DE_N5           &mt DE_AMPERSAND DE_N6          &none  &kp DE_ASTERISK  &kp DE_SLASH
 &rgb_ug RGB_HUD                  &rgb_ug RGB_HUI                    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                                   &mt DE_EXCL DE_N1    &mt DOUBLE_QUOTES DE_N2        &mt DE_SECTION DE_N3            &none  &kp DE_COMMA     &kp BACKSPACE
                                                                                      &none            &none            &kp SPACE                                         &kp RET              &kp K_CALCULATOR               &kp PRINTSCREEN
