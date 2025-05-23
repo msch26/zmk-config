@@ -80,7 +80,7 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &layerSwTap 4 Q    &layerSwTap 3 W  &layerSwTap 2 E  &layerSwTap 1 R  &layerSwTap 0 T  &kp DELETE  &kp LS(TAB)    &layerSwTap 0 DE_Z  &layerSwTap 1 U     &layerSwTap 2 I  &layerSwTap 3 O  &layerSwTap 4 P               &kp DE_U_UMLAUT
+&kp ESCAPE        &layerSwTap 4 Q    &layerSwTap 3 W  &layerSwTap 2 E  &layerSwTap 1 R  &layerSwTap 0 T  &kp DELETE  &kp TAB        &layerSwTap 0 DE_Z  &layerSwTap 1 U     &layerSwTap 2 I  &layerSwTap 3 O  &layerSwTap 4 P               &kp DE_U_UMLAUT
 &kp LEFT_SHIFT    &HRL LEFT_SHIFT A  &HRL LALT DE_S   &HRL LCTRL D     &lt 1 F          &kp G            &mo 3       &kp BACKSPACE  &kp H               &HRR RIGHT_SHIFT J  &HRR RCTRL K     &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &mt RIGHT_SHIFT DE_A_UMLAUT
 &kp LEFT_CONTROL  &kp DE_Y           &kp X            &kp C            &kp V            &kp B                                       &kp N               &kp M               &kp DE_COMMA     &kp DE_DOT       &HRR RIGHT_ALT DE_MINUS       &kp RCTRL
                                                       &mo 4            &lt 2 TAB        &lt 1 SPACE                                 &lt 1 RET           &lt 2 TAB           &lt 4 RET
