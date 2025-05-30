@@ -121,8 +121,8 @@
         layer_3 {
             bindings = <
 &kp ESCAPE                       &rgb_ug RGB_COLOR_HSB(291,92,44)   &kp K_PREVIOUS   &kp LS(C_PLAY)   &kp K_STOP       &kp K_NEXT       &none        &kp DE_EQUAL   &kp DE_PLUS   &kp DE_N7         &kp DE_N8        &kp DE_N9  &kp DE_SLASH     &trans
-&rgb_ug RGB_COLOR_HSB(0,100,46)  &rgb_ug RGB_COLOR_HSB(124,100,50)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none            &kp DE_EURO  &kp BACKSPACE  &kp DE_MINUS  &kp DE_N4         &kp NUMBER_5     &kp DE_N6  &kp DE_ASTERISK  &trans
-&rgb_ug RGB_HUD                  &rgb_ug RGB_HUI                    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                              &kp DE_N0     &kp NUMBER_1      &kp DE_N2        &kp DE_N3  &kp DE_COMMA     &kp DE_DOT
+&rgb_ug RGB_COLOR_HSB(0,100,46)  &rgb_ug RGB_COLOR_HSB(124,100,50)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none            &kp DE_EURO  &kp BACKSPACE  &kp DE_N0     &kp DE_N4         &kp NUMBER_5     &kp DE_N6  &kp DE_ASTERISK  &trans
+&rgb_ug RGB_HUD                  &rgb_ug RGB_HUI                    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                              &kp DE_MINUS  &kp NUMBER_1      &kp DE_N2        &kp DE_N3  &kp DE_COMMA     &kp DE_DOT
                                                                                      &none            &none            &kp SPACE                                    &kp RET       &kp K_CALCULATOR  &kp LC(DE_HASH)
             >;
         };
