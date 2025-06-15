@@ -129,9 +129,9 @@
 
         layer_4 {
             bindings = <
-&trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6  &kp F7  &kp F8            &kp F9                &kp F10               &kp F11            &kp F12    &trans
-&kp TAB  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5  &trans  &trans  &kp DE_N6         &kp DE_N7             &kp DE_N8             &kp DE_N9          &kp DE_N0  &trans
-&trans   &trans     &trans     &trans     &trans     &trans                     &kp LG(DE_CARET)  &kp LS(LC(LA(DE_W)))  &kp LS(LA(LC(DE_T)))  &kp LS(LA(LC(C)))  &kp TAB    &trans
+&trans   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6  &kp F7  &kp F8            &kp F9                &kp F10               &kp F11            &kp F12               &trans
+&kp TAB  &kp DE_N1  &kp DE_N2  &kp DE_N3  &kp DE_N4  &kp DE_N5  &trans  &trans  &kp DE_N6         &kp DE_N7             &kp DE_N8             &kp DE_N9          &kp DE_N0             &trans
+&trans   &trans     &trans     &trans     &trans     &trans                     &kp LG(DE_CARET)  &kp LS(LC(LA(DE_W)))  &kp LS(LA(LC(DE_T)))  &kp LS(LA(LC(C)))  &kp LS(LA(LC(DE_Q)))  &trans
                                &trans     &trans     &kp SPACE                  &trans            &trans                &trans
             >;
         };
