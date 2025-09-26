@@ -105,7 +105,7 @@
 
             bindings = <
 &kp ESCAPE        &kp DE_Q  &kp DE_W        &kp DE_E      &kp DE_R           &kp DE_T             &kp DELETE  &none          &kp DE_Z           &kp DE_U           &kp DE_I      &kp DE_O         &kp DE_P                      &kp DE_U_UMLAUT
-&kp LEFT_SHIFT    &kp A     &HRL LALT DE_S  &HRL LCTRL D  &layerSwTap 1 F    &lt 3 G              &none       &kp BACKSPACE  &lt 3 H            &layerSwTap 1 J    &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &HRR_new RIGHT_SHIFT DE_A_UMLAUT
+&kp LEFT_SHIFT    &kp A     &HRL LALT DE_S  &HRL LCTRL D  &lt 1 F            &lt 3 G              &none       &kp BACKSPACE  &lt 3 H            &lt 1 J            &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &HRR_new RIGHT_SHIFT DE_A_UMLAUT
 &kp LEFT_CONTROL  &kp DE_Y  &kp X           &kp C         &kp V              &kp B                                           &kp N              &kp M              &kp DE_COMMA  &kp DE_DOT       &HRR RIGHT_ALT DE_MINUS       &kp RCTRL
                                             &mo 4         &layerSwTap 2 TAB  &layerSwTap 1 SPACE                             &layerSwTap 1 RET  &layerSwTap 2 TAB  &mo 4
             >;
