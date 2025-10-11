@@ -95,7 +95,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "QWERTY";
+            display-name = "QWERTZ";
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
@@ -104,10 +104,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &kp DE_Q  &kp DE_W        &kp DE_E      &kp DE_R           &kp DE_T             &kp DELETE  &none          &kp DE_Z           &kp DE_U           &kp DE_I      &kp DE_O         &kp DE_P                      &kp DE_U_UMLAUT
-&kp LEFT_SHIFT    &kp A     &HRL LALT DE_S  &HRL LCTRL D  &lt 1 F            &lt 3 G              &none       &kp BACKSPACE  &lt 3 H            &lt 1 J            &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &HRR_new RIGHT_SHIFT DE_A_UMLAUT
-&kp LEFT_CONTROL  &kp DE_Y  &kp X           &kp C         &kp V              &kp B                                           &kp N              &kp M              &kp DE_COMMA  &kp DE_DOT       &HRR RIGHT_ALT DE_MINUS       &kp RCTRL
-                                            &mo 4         &layerSwTap 2 TAB  &layerSwTap 1 SPACE                             &layerSwTap 1 RET  &layerSwTap 2 TAB  &mo 4
+&kp ESCAPE        &kp DE_Q  &kp DE_W        &kp DE_E      &kp DE_R           &kp DE_T             &trans    &kp DELETE     &kp DE_Z           &kp DE_U           &kp DE_I      &kp DE_O         &kp DE_P                      &kp DE_U_UMLAUT
+&kp LEFT_SHIFT    &kp A     &HRL LALT DE_S  &HRL LCTRL D  &lt 1 F            &lt 3 G              &kp LGUI  &kp BACKSPACE  &lt 3 H            &lt 1 J            &HRR RCTRL K  &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &HRR_new RIGHT_SHIFT DE_A_UMLAUT
+&kp LEFT_CONTROL  &kp DE_Y  &kp X           &kp C         &kp V              &kp B                                         &kp N              &kp M              &kp DE_COMMA  &kp DE_DOT       &HRR RIGHT_ALT DE_MINUS       &kp RETURN
+                                            &mo 4         &layerSwTap 2 TAB  &layerSwTap 1 SPACE                           &layerSwTap 1 RET  &layerSwTap 2 TAB  &mo 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -144,9 +144,9 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE                       &rgb_ug RGB_COLOR_HSB(291,92,44)   &kp K_PREVIOUS   &kp LS(C_PLAY)   &kp K_STOP       &kp K_NEXT       &none        &kp DE_EQUAL   &kp DE_PLUS   &kp DE_N7         &kp DE_N8        &kp DE_N9  &kp DE_SLASH     &trans
-&rgb_ug RGB_COLOR_HSB(0,100,46)  &rgb_ug RGB_COLOR_HSB(124,100,50)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none            &kp DE_EURO  &kp BACKSPACE  &kp DE_N0     &kp DE_N4         &kp NUMBER_5     &kp DE_N6  &kp DE_ASTERISK  &kp DE_DEGREE
-&rgb_ug RGB_HUD                  &rgb_ug RGB_HUI                    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                              &kp DE_MINUS  &kp NUMBER_1      &kp DE_N2        &kp DE_N3  &kp DE_COMMA     &kp DE_DOT
+&kp ESCAPE                       &rgb_ug RGB_COLOR_HSB(291,92,44)   &kp K_PREVIOUS   &kp LS(C_PLAY)   &kp K_STOP       &kp K_NEXT       &none        &kp DE_EQUAL   &kp NUMBER_7  &kp NUMBER_8      &kp NUMBER_9     &kp DE_N9  &kp DE_PLUS      &kp DE_MINUS
+&rgb_ug RGB_COLOR_HSB(0,100,46)  &rgb_ug RGB_COLOR_HSB(124,100,50)  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none            &kp DE_EURO  &kp BACKSPACE  &kp NUMBER_4  &kp NUMBER_5      &kp NUMBER_6     &kp DE_N6  &kp DE_ASTERISK  &kp DE_SLASH
+&rgb_ug RGB_HUD                  &rgb_ug RGB_HUI                    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                              &kp NUMBER_1  &kp NUMBER_2      &kp NUMBER_3     &kp DE_N3  &kp DE_COMMA     &kp DE_DOT
                                                                                      &none            &none            &kp SPACE                                    &kp RET       &kp K_CALCULATOR  &kp LC(DE_HASH)
             >;
         };
