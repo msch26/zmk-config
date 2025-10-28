@@ -177,10 +177,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans          &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &kp UP          &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp ENTER
-                        &trans  &trans  &trans                  &trans  &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &toggle_layer_test 0  &trans  &trans          &trans          &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans          &kp UP          &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp ENTER
+                        &trans  &trans  &trans                                &trans  &trans          &trans
             >;
         };
     };
