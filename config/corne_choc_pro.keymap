@@ -178,7 +178,7 @@
         layer_6 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &toggle_layer_test 6  &trans  &trans          &trans          &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &toggle_layer_test 0  &trans  &trans          &kp UP          &trans     &trans  &bootloader
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &toggle_layer_test 0  &trans  &trans          &kp UP          &trans     &mo 0   &bootloader
 &trans  &trans  &trans  &trans  &trans  &trans                                &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &kp ENTER
                         &trans  &trans  &trans                                &trans  &trans          &trans
             >;
