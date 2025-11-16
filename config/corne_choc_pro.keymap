@@ -86,7 +86,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_L6";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp DE_TILDE>;
+            bindings = <&kp LEFT_SHIFT>, <&toggle_layer_test 6>;
 
             tapping-term-ms = <200>;
         };
