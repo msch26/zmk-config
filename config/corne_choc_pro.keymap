@@ -82,11 +82,11 @@
             #binding-cells = <1>;
         };
 
-        tap_dance_L6: tap_dance_L6 {
+        tap_dance_L2: tap_dance_L2 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_L6";
+            label = "TAP_DANCE_L2";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&toggle_layer_test 6>;
+            bindings = <&kp LEFT_SHIFT>, <&toggle_layer_test 2>;
 
             tapping-term-ms = <200>;
         };
@@ -96,22 +96,22 @@
         compatible = "zmk,combos";
 
         layer5_left {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <40 41 42>;
         };
 
         layer5_right {
-            bindings = <&mo 5>;
+            bindings = <&mo 6>;
             key-positions = <44 45 43>;
         };
 
         layer6_left {
-            bindings = <&mo 6>;
+            bindings = <&mo 2>;
             key-positions = <40 41>;
         };
 
         layer6_right {
-            bindings = <&mo 6>;
+            bindings = <&mo 2>;
             key-positions = <44 45>;
         };
     };
@@ -129,10 +129,10 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE        &kp DE_Q  &kp DE_W        &kp DE_E      &kp DE_R           &kp DE_T             &kp DELETE  &toggle_layer_test 6  &kp DE_Z              &kp DE_U           &kp DE_I             &kp DE_O         &kp DE_P                      &kp DE_U_UMLAUT
-&tap_dance_L6     &kp A     &HRL LALT DE_S  &HRL LCTRL D  &lt 1 F            &lt 3 G              &kp LGUI    &kp BACKSPACE         &lt 3 H               &lt 1 J            &HRR RCTRL K         &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &HRR_new RIGHT_SHIFT DE_A_UMLAUT
+&kp ESCAPE        &kp DE_Q  &kp DE_W        &kp DE_E      &kp DE_R           &kp DE_T             &kp DELETE  &toggle_layer_test 2  &kp DE_Z              &kp DE_U           &kp DE_I             &kp DE_O         &kp DE_P                      &kp DE_U_UMLAUT
+&tap_dance_L2     &kp A     &HRL LALT DE_S  &HRL LCTRL D  &lt 1 F            &lt 4 G              &kp LGUI    &kp BACKSPACE         &lt 4 H               &lt 1 J            &HRR RCTRL K         &HRR LEFT_ALT L  &HRR RIGHT_SHIFT DE_O_UMLAUT  &HRR_new RIGHT_SHIFT DE_A_UMLAUT
 &kp LEFT_CONTROL  &kp DE_Y  &kp X           &kp C         &kp V              &kp B                                                  &kp N                 &kp M              &kp DE_COMMA         &kp DE_DOT       &HRR RIGHT_ALT DE_MINUS       &HRR RCTRL RETURN
-                                            &mo 4         &layerSwTap 2 TAB  &layerSwTap 1 SPACE                                    &layerSwTap 1 RETURN  &layerSwTap 2 TAB  &layerSwTap 4 SPACE
+                                            &mo 5         &layerSwTap 3 TAB  &layerSwTap 1 SPACE                                    &layerSwTap 1 RETURN  &layerSwTap 3 TAB  &layerSwTap 5 SPACE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -152,6 +152,15 @@
 &mt LEFT_SHIFT TAB  &trans  &trans  &trans  &trans  &trans        &trans  &trans  &kp LEFT  &kp DOWN       &kp UP     &kp RIGHT  &kp DE_EURO  &kp DE_MICRO
 &trans              &tog 0  &trans  &trans  &trans  &kp LEFT_GUI                  &kp END   &kp PAGE_DOWN  &kp PG_UP  &kp HOME   &trans       &kp RET
                                     &trans  &trans  &trans                        &trans    &trans         &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans         &trans  &trans  &trans  &trans  &trans  &trans  &toggle_layer_test 2  &trans          &trans          &trans                &trans     &trans  &trans
+&tap_dance_L2  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP                &kp RIGHT  &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans                                &trans          &trans          &trans                &trans     &trans  &kp ENTER
+                               &trans  &trans  &trans                                &trans          &trans          &toggle_layer_test 2
             >;
         };
 
@@ -191,15 +200,6 @@
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans       &trans       &trans  &trans  &kp K_PLAY_PAUSE  &trans
 &trans  &trans        &bt BT_CLR    &sys_reset    &bootloader   &trans                        &bootloader  &bootloader  &trans  &trans  &trans            &kp K_CALCULATOR
                                     &trans        &trans        &trans                        &trans       &trans       &trans
-            >;
-        };
-
-        layer_6 {
-            bindings = <
-&trans                &trans  &trans  &trans  &trans  &trans  &trans  &toggle_layer_test 6  &trans          &trans          &trans                &trans     &trans  &trans
-&toggle_layer_test 6  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP                &kp RIGHT  &trans  &trans
-&trans                &trans  &trans  &trans  &trans  &trans                                &trans          &trans          &trans                &trans     &trans  &kp ENTER
-                                      &trans  &trans  &trans                                &trans          &trans          &toggle_layer_test 6
             >;
         };
     };
