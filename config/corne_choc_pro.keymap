@@ -157,9 +157,9 @@
 
         layer_6 {
             bindings = <
-&trans         &trans  &trans  &trans  &trans  &trans  &trans  &toggle_layer_test 2  &trans          &trans          &trans                &trans     &trans  &trans
-&tap_dance_L2  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP                &kp RIGHT  &trans  &trans
-&trans         &trans  &trans  &trans  &trans  &trans                                &trans          &trans          &trans                &trans     &trans  &kp ENTER
+&trans         &trans  &trans  &trans  &trans  &trans  &trans  &toggle_layer_test 2  &trans          &trans          &trans                &trans           &trans  &trans
+&tap_dance_L2  &trans  &trans  &trans  &trans  &trans  &trans  &trans                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP                &kp RIGHT        &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans                                &trans          &kp LEFT_ARROW  &kp DOWN_ARROW        &kp RIGHT_ARROW  &trans  &kp ENTER
                                &trans  &trans  &trans                                &trans          &trans          &toggle_layer_test 2
             >;
         };
@@ -196,10 +196,10 @@
 
         layer_5 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans       &trans       &trans  &trans  &kp K_PREV        &kp K_NEXT
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans       &trans       &trans  &trans  &kp K_PLAY_PAUSE  &trans
-&trans  &trans        &bt BT_CLR    &sys_reset    &bootloader   &trans                        &bootloader  &bootloader  &trans  &trans  &trans            &kp K_CALCULATOR
-                                    &trans        &trans        &trans                        &trans       &trans       &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans       &trans       &trans  &trans       &trans  &trans  &kp K_PREV        &kp K_NEXT
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bootloader  &bootloader  &trans  &trans       &trans  &trans  &kp K_PLAY_PAUSE  &trans
+&trans  &trans        &bt BT_CLR    &sys_reset    &bootloader   &trans                                  &trans  &bootloader  &trans  &trans  &trans            &kp K_CALCULATOR
+                                    &trans        &trans        &trans                                  &trans  &trans       &trans
             >;
         };
     };
